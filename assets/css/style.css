@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 2;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+  background-color: #33d1cc;
+  color: #ffffff;
+  transition: background-color 0.7s ease-in-out;
+  font-size: 16px !important;
+}
+.main-btn:hover {
+  color: #ffffff;
+  background-color: #29a09c;
+}
+
+.head-section .image {
+  width: 120px;
+}
+.head-section .title {
+  color: #19283f;
+  margin-top: 10px;
+}
+.head-section::after {
+  content: "";
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 2px;
+  background-color: #33d1cc;
+}
+
+section {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.bg-section {
+  background-color: #eff7fa;
+}
+
+.bg-dark-section {
+  background-color: #19283f;
+}
+
+.bg-yellow-section {
+  background-color: #ffc400;
+}
+
+.center-object {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.padd {
+  padding: 60px 0;
+}
+
+.description {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.box-text .box-name {
+  background-color: #33d1cc;
+}
+
+/* --------------Start Style Header-------------- */
+.search {
+  border-left: 1px solid #33d1cc;
+}
+
+.nav-link {
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link.active, .nav-link:focus, .nav-link:hover {
+  color: #33d1cc;
+}
+
+.navbar-toggler {
+  color: #ffffff;
+  font-size: 25px;
+  border-color: #ffffff;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler[aria-expanded=true] {
+  border-color: #33d1cc;
+}
+
+/* --------------End Style Header-------------- */
+/* --------------Start Style Landing-------------- */
+.landing {
+  height: calc(100vh - 78px);
+}
+.landing p {
+  color: rgba(235, 235, 235, 0.4039215686);
+  font-size: 15px;
+}
+
+/* --------------End Style Landing-------------- */
+/* --------------Start Style Feathers-------------- */
+.feathers .feat-icons .number {
+  height: 200px;
+  color: #eff7fa;
+}
+.feathers .feat-icons .icon {
+  left: 50%;
+  transform: translate(-50%);
+  color: #33d1cc;
+}
+.feathers .feat-title {
+  color: #ffc400;
+}
+
+/* --------------End Style Feathers-------------- */
+/* --------------Start Style Services-------------- */
+.services .category li a {
+  transition: all 0.5s ease-in-out;
+  color: #222;
+}
+.services .category li a:hover {
+  color: #33d1cc;
+}
+.services .serv {
+  overflow: hidden;
+}
+.services .serv .image {
+  cursor: pointer;
+  position: relative;
+}
+.services .serv .image::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgba(51, 209, 204, 0.5411764706);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transform: translateX(-100%);
+  transition: 0.5s ease-in-out;
+}
+.services .serv .image:hover::before {
+  transform: translateX(0%);
+}
+.services .serv .text__stars svg:nth-child(1) {
+  color: #ffc400;
+}
+.services .serv .text__stars svg:nth-child(2) {
+  color: #ffc400;
+}
+.services .serv .text__stars svg:nth-child(3) {
+  color: #ffc400;
+}
+
+/* --------------End Style Services-------------- */
+/* --------------End Style Subscribe-------------- */
+.subscribe form input {
+  width: 100%;
+  border: transparent;
+  border-bottom: solid 1px #ffffff;
+  outline: none !important;
+}
+.subscribe form input::-moz-placeholder {
+  color: #ffffff;
+}
+.subscribe form input::placeholder {
+  color: #ffffff;
+}
+
+/* --------------End Style Subscribe-------------- *//*# sourceMappingURL=style.css.map */
